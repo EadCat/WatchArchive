@@ -9,5 +9,5 @@ Guide
 3. 'A' button : left rotation  
 4. 'S' button : right rotation  
 5. 'space bar' button : down the block  
-6. 'Arrow keys' (πÊ«‚≈∞) : move the block  
+6. 'Arrow keys' (Î∞©Ìñ•ÌÇ§) : move the block  
   
