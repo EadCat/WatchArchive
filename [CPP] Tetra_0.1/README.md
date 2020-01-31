@@ -2,6 +2,7 @@
 ## Created on Sept. 2019. Windows VS
 
 There are many bugs.  
+Build Windows only.
 
 Guide  
 1. No Block clear method. (just stacking)   
