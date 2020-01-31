@@ -2,3 +2,12 @@
 ## Created on Sept. 2019. Windows VS
 
 There are many bugs.  
+
+Guide  
+1. No Block clear method. (just stacking)   
+2. No Gravity method.  
+3. 'A' button : left rotation  
+4. 'S' button : right rotation  
+5. 'space bar' button : down the block  
+6. 'Arrow keys' (πÊ«‚≈∞) : move the block  
+  
