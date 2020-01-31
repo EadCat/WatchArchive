@@ -1,8 +1,8 @@
 # MNIST Deep-Learning Model
 ## Created on Jan. 30th. 2020, Windows Pycharm
-### referenced <«¼«íª«ªéíÂªë Deep Learning - Saito goki>
+### referenced <ã‚¼ãƒ­ã‹ã‚‰ä½œã‚‹ Deep Learning - Saito goki>
 
-This model will download MNIST images from URL [MNIST Database](http://yann.lecun.com/exdb/mnist/)
+This model will download MNIST images from [MNIST Database](http://yann.lecun.com/exdb/mnist/)
 First, The model downloads images. if there are images already, it just read pkl file.
 Second, The model trains 10,000 training images.
 Third, The model is tested by test images.
