@@ -8,4 +8,10 @@
     - Game Over  
     - Point Print  
     - Gravity  
-3. ![Example](./example.gif)  
+3. Guide  
+    - A : left rotation  
+    - D : right rotation  
+    - Arrow Keys : move blocks  
+    - Space : Down Straight  
+
+4. ![Example](./example.gif)  
