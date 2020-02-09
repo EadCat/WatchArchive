@@ -15,3 +15,8 @@
     - Space : Down Straight  
 
 4. ![Example](./example.gif)  
+
+
+===Feb. 9th. 2020.===  
+
+1. Block Memory Leak Fix. (208 bytes per block)  

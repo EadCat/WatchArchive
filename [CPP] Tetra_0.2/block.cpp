@@ -54,12 +54,7 @@ Tetra::Tetra(int kind, int x_init, int y_init, int state, int width, int height)
 	}
 }
 
-Tetra::~Tetra() {
-	// outset 좌표 값은 field class 에 리턴하고 destroy.
-	delete[] this->addset;
-	delete[] this->outset;
-	delete[] this->prediction;
-}
+Tetra::~Tetra() {}
 
 int* Tetra::addr() {
 	for (int i = 0; i < 4; i++) {

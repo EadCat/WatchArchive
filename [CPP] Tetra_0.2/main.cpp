@@ -8,15 +8,24 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+//#include <crtdbg.h>
+/*
+#ifdef _DEBUG
+#define new new(_CLIENT_BLOCK, __FILE__, __LINE__)
+#define malloc(s) _malloc_dbg(s, _NORMAL_BLOCK, __FILE__, __LINE__)
+#endif
+*/
 
 
 int main() {
 	blockfield field;
-	Tetra* block_ptr = NULL;
+	Tetra* block_ptr;
 	int command = NULL;
 	int selector, state;
 	time_t forward = time(NULL);
 	time_t delta = time(NULL);
+
+	//_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
 	NoCursor(); // Cursor Hiding Function
 	srand(time(NULL)); // random seed setting
@@ -29,15 +38,18 @@ int main() {
 	while (1) {
 		selector = rand() % 7;
 		state = rand() % 4;
+		block_ptr = nullptr;
 		block_ptr = new Tetra(selector, WIDTH / 2, NULL, state);
 		field.print_block(block_ptr->addr());
 		if (field.permission(block_ptr->move_predict(DOWN)) == false) {
 			field.set_block(block_ptr->addr());
+			delete block_ptr;
 			break;
 		}
 		while (1) {
 			field.print_block(block_ptr->addr());
 			/* ===================================Gravity===================================== */
+			
 			forward = time(NULL);
 			if (cooltime(forward, delta)) {
 				delta = time(NULL);
@@ -45,9 +57,11 @@ int main() {
 				block_ptr->move_down(field.permission(block_ptr->move_predict(DOWN)));
 				if (block_ptr->destruction_command()) {
 					field.set_block(block_ptr->addr());
+					delete block_ptr; // destruction call
 					break;
 				}
 			}
+			
 			/*=================================================================================*/
 			
 			/*==================================User Control===================================*/
@@ -67,6 +81,7 @@ int main() {
 					if (block_ptr->destruction_command()) {
 						field.set_block(block_ptr->addr());
 						field.destroy_block(block_ptr->addr());
+						delete block_ptr;  // destruction call
 						field.print_point();
 						break;
 					}
@@ -78,6 +93,7 @@ int main() {
 							field.set_block(block_ptr->addr());
 							field.destroy_block(block_ptr->addr());
 							field.print_point();
+							delete block_ptr; // destruction call
 							break;
 						}
 						block_ptr->move_down(field.permission(block_ptr->move_predict(DOWN)));
