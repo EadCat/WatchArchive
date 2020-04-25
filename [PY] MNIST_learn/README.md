@@ -1,4 +1,4 @@
-# MNIST Deep-Learning Model
+# MNIST Learning Model
 ## Created on Jan. 30th. 2020, Windows Pycharm
 ### referenced <ゼロから作る Deep Learning - Saito goki>
 
