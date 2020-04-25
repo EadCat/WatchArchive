@@ -12,3 +12,6 @@ Feb. 3rd. 2020
 
 Feb. 9th. 2020  
 1. Tetra 0.2 Memory Leak Fix.  
+
+Apr. 25th. 2020  
+1. Simply-connected Linked-List.  
