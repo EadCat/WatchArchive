@@ -8,10 +8,13 @@ Feb. 1st. 2020
 4. Upload MNIST Learning Model  
 
 Feb. 3rd. 2020  
-1. Upload Tetra 0.2  
+ - Upload Tetra 0.2  
 
 Feb. 9th. 2020  
-1. Tetra 0.2 Memory Leak Fix.  
+ - Tetra 0.2 Memory Leak Fix.  
 
 Apr. 25th. 2020  
-1. Simply-connected Linked-List.  
+ - Simply-connected Linked-List.  
+
+May. 7th. 2020  
+ - Upload Java Swing Random Number Generator.  
